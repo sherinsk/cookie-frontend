@@ -12,7 +12,7 @@ export default function SignIn() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/signin", formData, {
+      const res = await axios.post("https://cookie-backend-sable.vercel.app/signin", formData, {
         withCredentials: true, // Allows cookies to be sent
       });
       setMessage(res.data.message);

@@ -6,7 +6,7 @@ export default function Navbar() {
 
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:5000/logout", {}, { withCredentials: true });
+      await axios.post("https://cookie-backend-sable.vercel.app/logout", {}, { withCredentials: true });
       navigate("/");
     } catch (error) {
       console.error("Logout failed", error);

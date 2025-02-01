@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import SignIn from "./SignIn";
+import SignIn from "./SignIn.jsx";
 import Protected from "./Protected";
 import Navbar from "./Navbar";
 

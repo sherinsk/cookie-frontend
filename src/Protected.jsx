@@ -5,7 +5,7 @@ export default function Protected() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:5000/protected", { withCredentials: true })
+    axios.get("https://cookie-backend-sable.vercel.app/protected", { withCredentials: true })
       .then(res => setMessage(res.data.message))
       .catch(() => setMessage("Access Denied"));
   }, []);
